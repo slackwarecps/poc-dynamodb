@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>br.com.fabioalvaro</groupId>
 	<artifactId>poc-dynamodb</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>poc-dynamodb</name>
-	<description>Demo project for Spring Boot</description>
+	<description>POC DYNAMODB FABAO</description>
 	<url/>
 	<licenses>
 		<license/>

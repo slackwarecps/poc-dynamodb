@@ -32,4 +32,17 @@ public class CorService {
         cor.setCodigo(codigo);
         mapper.delete(cor);
     }
+
+  
+    public Cor atualizar(String codigo, Cor corDadosAtualizados) {
+        Cor corExistente = mapper.load(Cor.class, codigo);
+        if (corExistente == null) {
+            return null; // Indica que a cor não foi encontrada
+        }
+
+        // Garante que o código do objeto a ser salvo é o mesmo da URL
+        corDadosAtualizados.setCodigo(codigo);
+        mapper.save(corDadosAtualizados); // O save sobrescreve o item existente
+        return corDadosAtualizados;
+    }
 }
